@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app by jodos</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="title">
+      <img
+        src="./weatherAppIcon.jpeg"
+        alt=" weather app logo"
+        class="appLogo"
+      />
+      <h2 class="head">
+        welcome to weather api where you can find weather of your location in
+        short time
+      </h2>
+    </div>
+    <div class="formDiv">
+      <form action="">
+        <div></div>
+        <label for="place">your location</label>
+        <input
+          type="text"
+          required
+          placeholder="your city"
+          name="location"
+          id="city"
+          onchange="getValue(event)"
+        />
+        <button type="button" onclick="performSearch()">Search</button>
+      </form>
+      <div class="dataDiv">
+        <div>
+          <h3 class="location">Kigali</h3>
+          <p class="date">Saturday, August 12, 2023 at 7:23 AM</p>
+        </div>
+        <div class="parental">
+          <div class="parental1">
+            <h3>temperature</h3>
+            <div class="tempDiv">
+              <img src="/sun.png" alt=" sun image" class="sunImage" />
+              <p class="temp">33°C</p>
+            </div>
+          </div>
+          <div class="parental1">
+            <h3>wind Speed</h3>
+            <p class="wind">23km/h</p>
+          </div>
+        </div>
+        <div class="parental">
+          <div class="parental1">
+            <h3>Cloudiness:</h3>
+            <p class="cloud">100%</p>
+          </div>
+          <div class="parental1">
+            <h3>Humidity :</h3>
+            <p class="humidity">30</p>
+          </div>
+        </div>
+        <div class="parental">
+          <div class="parental1">
+            <h3>Sunrise :</h3>
+            <p class="sunrise">6.00AM</p>
+          </div>
+          <div class="parental1">
+            <h3>Sunset :</h3>
+            <p class="sunset">6PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="loading" style="display: none">Loading...</div>
+
+    
+    </div>
+    <div class="footer">
+      <p> &copy; weather app by jodos</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
